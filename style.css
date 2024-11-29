@@ -1,16 +1,25 @@
 * {
-    border: 1px solid black;
     text-align: center;
-    font-family: Roboto, "Times New Roman" ;
+    font-family: Roboto, sans-serif;
     margin: 0;
+}
+
+a {
+    text-decoration:none;
+    color: #E5E7EB;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 0px 60px 0px 60px;
+    padding: 10px 60px 10px 60px;
     background-color: #1F2937;
+}
 
+.links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
 .logo {
@@ -25,32 +34,64 @@
     background-color: #1F2937;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
 h1 {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
+    text-align: left;
+}
+.secondary {
+    font-size: 18px;
+    color: #E5E7EB; 
+    text-align: left;
 }
 
 button {
     background-color: #3882F6;
     color: #F9FAF8;
+    margin: 5px;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
 
+.image {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 50%;
 }
-.secondary {
-    font-size: 18px;
-    color: #E5E7EB; 
-}
-.section.two {
-    padding: 60px;
+
+
+h3 {
+    padding: 20px;
 }
 
 .carousel {
     display: flex;
     justify-content: space-evenly;
+    gap: 20px;
+    padding: 0px 90px 90px;
+}
+.carousel img {
+    border: 2px solid #3882F6;
+    border-radius: 5px;
+}
+.image-text p {
+    font-size: 12px; 
+    color: #1F2937;
+    font-weight: lighter;
 }
 
 .section.three {
-    padding: 60px;
+    padding: 100px;
     background-color: #E5E7EB;
 }
 
@@ -59,28 +100,50 @@ button {
     font-style: italic; 
     color: #1F2937;
     font-weight: lighter;
+    text-align: left;
+}
 
+.quote.author{
+    font-size: 16px; 
+    font-weight: bold;
+    text-align: right;
 }
 
 .section.four {
     display: flex;
     padding: 60px;
-
+    justify-content: center;
 }
 
 .action.box {
     display: flex;
     background-color: #3882F6;
     color: #F9FAF8;
-
+    padding: 20px 50px;
+    border-radius: 5px;
+    gap: 50px;
 }
 
-a {
-    text-decoration:none;
-    color: #E5E7EB;
+.left p{
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: left;
 }
+.left h4{
+    text-align: left;
+}
+
+.action.box div button {
+    border: 1px solid #F9FAF8;
+    min-width: 79px;
+}
+
+
 
 .footer {
     background-color: #1F2937;
     color: #F9FAF8;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: lighter;
 }
